@@ -58,17 +58,17 @@
 							<section class="tiles">
 								<article>
 									<span class="image">
-										<img src="film-gallery/bnw/aguas_dulces.bmp" />
+										<img src="film-gallery/bnw/aguas_dulces.bmp" onclick="image(this)" />
 									</span>
 								</article>
 								<article>
 									<span class="image">
-										<img src="film-gallery/bnw/boton.bmp" />
+										<img src="film-gallery/bnw/boton.bmp" onclick="image(this)" />
 									</span>
 								</article>
 								<article>
-									<a class="image" style="cursor: pointer; outline: 0px;">
-										<img src="film-gallery/bnw/pomo_misterioso.bmp" alt/>
+									<a class="image">
+										<img src="film-gallery/bnw/pomo_misterioso.bmp" onclick="image(this)"/>
 									</a>
 								</article>
 								<!--
@@ -203,6 +203,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				function image(img) {
+					var src = img.src;
+					window.open(src);
+				}
+				</script>
 
 	</body>
 </html>

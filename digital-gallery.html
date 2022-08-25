@@ -58,17 +58,17 @@
 						<section class="tiles">
 							<article>
 								<span class="image">
-									<img src="digital-gallery/olivo.jpg" />
+									<img src="digital-gallery/olivo.jpg" onclick="image(this)"/>
 								</span>
 							</article>
 							<article>
 								<span class="image">
-									<img src="digital-gallery/panoramica.jpg" />
+									<img src="digital-gallery/panoramica.jpg" onclick="image(this)"/>
 								</span>
 							</article>
 							<article>
 								<a class="image" style="cursor: pointer; outline: 0px;">
-									<img src="digital-gallery/tapera.jpg" alt/>
+									<img src="digital-gallery/tapera.jpg" onclick="image(this)"/>
 								</a>
 							</article>
 							<!--
@@ -202,6 +202,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+				function image(img) {
+					var src = img.src;
+					window.open(src);
+				}
+				</script>
 
 	</body>
 </html>
