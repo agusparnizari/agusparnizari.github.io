@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -18,6 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
+							
 						<div class="inner">
 
 							<!-- Logo -->
@@ -44,7 +46,6 @@
 							<li><a href="digital-gallery.html">Galería Digital</a></li>
 							<li><a href="film-gallery.html">Galería Química</a></li>
 							<li><a href="blog.html">Blog</a></li>
-							<!-- <li><a href="elements.html">Contacto</a></li> -->
 						</ul>
 					</nav>
 
@@ -55,124 +56,9 @@
 							<h2>Galería Digital<br />
 							</a></h2>
 						</header>
-						<section class="tiles">
-							<article>
-								<span class="image">
-									<img src="digital-gallery/olivo.jpg" onclick="image(this)"/>
-								</span>
-							</article>
-							<article>
-								<span class="image">
-									<img src="digital-gallery/panoramica.jpg" onclick="image(this)"/>
-								</span>
-							</article>
-							<article>
-								<a class="image" style="cursor: pointer; outline: 0px;">
-									<img src="digital-gallery/tapera.jpg" onclick="image(this)"/>
-								</a>
-							</article>
-							<!--
-							<article class="style4">
-								<span class="image">
-									<img src="images/pic04.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Tempus</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style5">
-								<span class="image">
-									<img src="images/pic05.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Aliquam</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style6">
-								<span class="image">
-									<img src="images/pic06.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Veroeros</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style2">
-								<span class="image">
-									<img src="images/pic07.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Ipsum</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style3">
-								<span class="image">
-									<img src="images/pic08.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Dolor</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style1">
-								<span class="image">
-									<img src="images/pic09.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Nullam</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style5">
-								<span class="image">
-									<img src="images/pic10.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Ultricies</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style6">
-								<span class="image">
-									<img src="images/pic11.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Dictum</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							<article class="style4">
-								<span class="image">
-									<img src="images/pic12.jpg" alt="" />
-								</span>
-								<a href="generic.html">
-									<h2>Pretium</h2>
-									<div class="content">
-										<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-									</div>
-								</a>
-							</article>
-							-->
-						</section>
+
+					<div id="gallery"></div>
+						
 					</div>
 				</div>
 
@@ -202,12 +88,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
 			<script type="text/javascript">
-				function image(img) {
-					var src = img.src;
-					window.open(src);
-				}
-				</script>
+			jQuery(document).ready(function(){
+				jQuery("#gallery").load("apl-photo.art/gallery.html");
+			});
+</script>
+		
+				
 
 	</body>
 </html>
